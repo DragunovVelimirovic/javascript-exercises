@@ -12,6 +12,16 @@ const sumAll = function(inputOne, inputTwo) {
 
     }
 
+    if (inputOne < 0 || inputTwo < 0) {
+        
+        return "ERROR";
+    }
+
+    if (!Number.isInteger(inputOne) || !Number.isInteger(inputTwo)) {
+
+        return "ERROR";
+    }
+
     for (let nextNum = smallerNum; nextNum <= largerNum; nextNum++) {
         
         sum += nextNum;
